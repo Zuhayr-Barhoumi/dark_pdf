@@ -1,11 +1,3 @@
-// Retrieve the state from Chrome Storage
-chrome.storage.sync.get(["toggleState"], function (result) {
-  const toggleState = result.toggleState;
-
-  // Set the initial state of the toggle button
-  document.getElementById("toggle").checked = toggleState;
-});
-
 console.log("Content script is running");
 // Create the overlay element
 const overlay = document.createElement("div");
@@ -22,14 +14,18 @@ console.log("CLass smhc35 added to overlay");
 
 // Add the overlay to the document body
 document.body.appendChild(overlay);
+chrome.storage.sync.set({ toggleState: true });
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === "toggleSwitch") {
     const smhc35Element = document.querySelector(".smhc35");
-
+    // Retrieve the state from Chrome Storage
     if (smhc35Element) {
-      // Toggle the "hidden" class based on the toggle state
-      smhc35Element.classList.toggle("hidden", !request.isChecked);
+      chrome.storage.sync.get(["toggleState"], function (result) {
+        const toggleState = result.toggleState;
+        // Toggle the "hidden" class based on the toggle state
+        smhc35Element.classList.toggle("hidden", !toggleState);
+      });
     }
   }
 });
