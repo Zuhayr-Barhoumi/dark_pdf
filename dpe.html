@@ -1,5 +1,25 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="dark.css" />
+  </head>
   <body>
     <h1>Dark PDF extension</h1>
+
+    <div class="wrapper">
+      <input
+        id="toggle"
+        class="toggle"
+        type="checkbox"
+        role="switch"
+        name="toggle"
+        value="on"
+      />
+      <label for="toggle" class="slot">
+        <span class="slot__label">OFF</span>
+        <span class="slot__label">ON</span>
+      </label>
+      <div class="curtain"></div>
+    </div>
   </body>
+  <script src="scripts/toggle.js"></script>
 </html>
