@@ -1,3 +1,11 @@
+// Retrieve the state from Chrome Storage
+chrome.storage.sync.get(["toggleState"], function (result) {
+  const toggleState = result.toggleState;
+
+  // Set the initial state of the toggle button
+  document.getElementById("toggle").checked = toggleState;
+});
+
 console.log("Content script is running");
 // Create the overlay element
 const overlay = document.createElement("div");
@@ -10,7 +18,6 @@ overlay.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
 overlay.style.pointerEvents = "none"; // prevent blocking interactions
 
 overlay.classList.add("smhc35");
-overlay.classList.add("hidden");
 console.log("CLass smhc35 added to overlay");
 
 // Add the overlay to the document body
