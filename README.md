@@ -5,7 +5,7 @@ It creates comfortable and eye-firendly reading experience, especially in low-li
 
 ## Installation:
 
-1. Download the extension ([https://github.com/Zouheir-Barhoumi/dark_pdf]).
+1. Download the extension [https://github.com/Zouheir-Barhoumi/dark_pdf].
 2. Go to chrome://extensions/.
 3. Enable Developer mode.
 4. Click "Load unpacked" and select the downloaded file.
