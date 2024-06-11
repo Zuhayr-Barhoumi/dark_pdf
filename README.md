@@ -1,7 +1,6 @@
 # Dark Reader for PDFs
 
-This is my first chrome extension. It adds a dark overlay on top of PDFs and other documents opened in Chrome.
-It creates comfortable and eye-firendly reading experience, especially in low-light environments.
+This is a chrome extension that adds a dark overlay on top of PDFs and other documents opened in Chrome. It creates comfortable and eye-firendly reading experience, especially in low-light environments.
 
 ## Installation:
 
