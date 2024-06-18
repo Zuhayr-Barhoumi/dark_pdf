@@ -4,7 +4,7 @@ This is a chrome extension that adds a dark overlay on top of PDFs and other doc
 
 ## Installation:
 
-1. Download the extension [here][(https://github.com/Zouheir-Barhoumi/dark_pdf/archive/refs/heads/main.zip)]
+1. Download the extension [here](https://github.com/Zouheir-Barhoumi/dark_pdf/archive/refs/heads/main.zip)
 2. Go to chrome://extensions/.
 3. Enable Developer mode.
 4. Click "Load unpacked" and select the downloaded file.
